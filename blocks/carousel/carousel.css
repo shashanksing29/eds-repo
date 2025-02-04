@@ -1,0 +1,105 @@
+.carousel-container {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: none;
+  position: relative;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.carousel-slide .carousel-content {
+  position: absolute;
+  bottom: 0;
+  background: white;
+  color: black;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.carousel-slide h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.carousel-slide p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.carousel-slide a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: yellow;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-slide a.button:hover {
+  background-color: darkorange;
+}
+
+.carousel-nav {
+  position: absolute;
+  bottom: 10px; /* Position at the bottom */
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.carousel-prev {
+  right: 80px; /* Increased gap between buttons */
+}
+
+.carousel-next {
+  right: 10px; /* Increased gap between buttons */
+}
+
+.carousel-nav .icon {
+  font-size: 24px;
+  color: #333;
+}
+
+.carousel-dots {
+  text-align: center;
+  padding: 15px;
+}
+
+.carousel-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-dot.active {
+  background-color: #333;
+}
