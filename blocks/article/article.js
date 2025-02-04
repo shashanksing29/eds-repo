@@ -1,24 +1,30 @@
 export default function decorate(block) {
-  const imageContainer = block.querySelector('div:nth-child(1)');
-  const contentContainer = block.querySelector('div:nth-child(2)');
+  const image = block.querySelector('picture');
+  const featuredText = block.querySelector('h4, h5, h6');
+  const title = block.querySelector('h1, h2, h3');
+  const description = block.querySelectorAll('p')[1];
+  const button = block.querySelector('a');
 
-  const image = imageContainer.querySelector('img');
-  const featuredText = contentContainer.querySelector('h4');
-  const title = contentContainer.querySelector('h2');
-  const description = contentContainer.querySelector('p');
-  const cta = contentContainer.querySelector('a');
+  if (image && title && description && button) {
+    const articleContent = document.createElement('div');
+    articleContent.classList.add('article-content');
 
-  block.innerHTML = `
-    <div class="article-image">
-      ${image.outerHTML}
-    </div>
-    <div class="article-content">
-      <div class="featured-text">${featuredText.outerHTML}</div>
-      <h2 class="title">${title.innerHTML}</h2>
-      <p class="description">${description.innerHTML}</p>
-      <div class="cta-container">
-        <a class="cta" href="${cta.href}">${cta.innerHTML}</a>
-      </div>
-    </div>
-  `;
+    const articleText = document.createElement('div');
+    articleText.classList.add('article-text');
+
+    const articleImage = document.createElement('div');
+    articleImage.classList.add('article-image');
+
+    articleImage.appendChild(image);
+    articleText.appendChild(featuredText);
+    articleText.appendChild(title);
+    articleText.appendChild(description);
+    articleText.appendChild(button);
+
+    articleContent.appendChild(articleImage);
+    articleContent.appendChild(articleText);
+
+    block.innerHTML = '';
+    block.appendChild(articleContent);
+  }
 }

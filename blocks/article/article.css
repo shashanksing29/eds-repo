@@ -1,56 +1,48 @@
-.article-image {
-  flex: 1;
+.article-content {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f4f4f4;
 }
 
-.article-image img {
+.article-image {
+  flex: 1 1 50%;
+  max-width: 50%;
+  overflow: hidden;
+}
+
+.article-image picture img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.article-content {
-  flex: 1;
-  padding: 40px;
-  background-color: #f0f0f0;
+.article-text {
+  flex: 1 1 50%;
+  max-width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
-.article-content .featured-text {
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  color: #000;
+.article-text h1, .article-text h2, .article-text h3, .article-text h4, .article-text h5, .article-text h6 {
+  margin-top: 0;
 }
 
-.article-content .title {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 32px;
-  color: #333;
+.article-text p {
   margin: 20px 0;
+  font-size: 14px; /* Reduced font size */
 }
 
-.article-content .description {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  color: #555;
-  line-height: 1.5;
-  margin-bottom: 20px;
-}
-
-.article-content .cta-container {
-  margin-top: 20px;
-}
-
-.article-content .cta {
+.article-text a.button {
   display: inline-block;
   padding: 10px 20px;
   background-color: yellow;
-  color: #000;
+  color: black;
   text-decoration: none;
-  font-family: Arial, sans-serif;
   font-weight: bold;
+  border-radius: 4px;
   transition: background-color 0.3s ease;
 }
 
-.article-content .cta:hover {
+.article-text a.button:hover {
   background-color: darkorange;
 }
