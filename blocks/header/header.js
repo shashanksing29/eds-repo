@@ -1,5 +1,3 @@
-import { loadFragment } from '../fragment/fragment.js';
-
 /**
  * Decorates the header block.
  * @param {Element} block The header block element
