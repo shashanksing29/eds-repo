@@ -7,7 +7,7 @@ export default function decorate(block) {
   block.innerHTML = `
     <div class="carousel-container">
       <div class="carousel-slides">
-        ${slides.map(slide => (`<div class="carousel-slide">${slide.innerHTML}</div>`)).join('')}
+        ${slides.map((slide) => `<div class="carousel-slide">${slide.innerHTML}</div>`).join('')}
       </div>
       <button class="carousel-nav carousel-prev"><span class="icon icon-arrow-left"></span></button>
       <button class="carousel-nav carousel-next"><span class="icon icon-arrow-right"></span></button>
@@ -32,7 +32,7 @@ export default function decorate(block) {
     dotElems[currentSlide].classList.add('active');
   }
 
-  dotElems.forEach(dot => {
+  dotElems.forEach((dot) => {
     dot.addEventListener('click', () => {
       updateCarousel(parseInt(dot.dataset.slide, 10));
     });
