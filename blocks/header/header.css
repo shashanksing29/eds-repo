@@ -14,8 +14,8 @@ header nav {
   justify-content: space-between;
   align-items: center;
   max-width: 1248px;
-  margin: 20px 0px;
-  padding: 0px 24px;
+  margin: 20px 0;
+  padding: 0 24px;
 }
 
 header .nav-brand {
@@ -44,7 +44,7 @@ header .nav-sections ul li {
   font-weight: 500;
   padding: 15px 20px; /* Increase padding to create larger rectangular area */
   transition: background-color 0.3s ease; /* Add transition effect */
-  font-family: 'Arial', sans-serif; /* Match the font styling */
+  font-family: Arial, sans-serif; /* Match the font styling */
 }
 
 header .nav-sections ul li a {
