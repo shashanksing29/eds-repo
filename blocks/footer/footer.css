@@ -45,13 +45,13 @@ footer {
   color: white; /* Set link color to white */
 }
 
-.footer-bottom a:hover {
-  color: lightgray; /* Set link hover color to light gray */
-}
-
 .footer-top nav ul li a {
   color: white;
   text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: lightgray; /* Set link hover color to light gray */
 }
 
 .footer-top nav ul li a:hover {
@@ -81,7 +81,7 @@ footer {
   height: 24px;
 }
 
-@media (min-width: 900px) {
+@media (width >= 900px) {
   .footer-content {
     margin: auto 32px; /* Update left and right margins for larger screens */
     padding: 40px 0 24px;
