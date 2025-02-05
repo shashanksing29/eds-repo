@@ -3,7 +3,7 @@ Capstone : WKND site redesigned in EDS.
 
 ## Environments
 - Preview: https://main--eds-repo--shashanksing29.aem.page/
-- Live: https://main--eds-repo--shashanksing29.aem.page/
+- Live: https://main--eds-repo--shashanksing29.aem.live/
 
 ## Documentation
 
