@@ -1,9 +1,9 @@
-# Your Project's Title...
-Your project's description...
+# WKND EDS Site
+Capstone : WKND site redesigned in EDS. 
 
 ## Environments
-- Preview: https://main--{repo}--{owner}.aem.page/
-- Live: https://main--{repo}--{owner}.aem.live/
+- Preview: https://main--eds-repo--shashanksing29.aem.page/
+- Live: https://main--eds-repo--shashanksing29.aem.page/
 
 ## Documentation
 
