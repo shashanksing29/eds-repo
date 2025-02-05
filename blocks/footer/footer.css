@@ -1,20 +1,80 @@
 footer {
-  background-color: var(--light-color);
+  background-color: black; /* Set background color to black */
+  color: white; /* Set text color to white */
   font-size: var(--body-font-size-xs);
 }
 
-footer .footer > div {
-  margin: auto;
+.footer-content {
   max-width: 1200px;
-  padding: 40px 24px 24px;
+  margin: auto 24px; /* Add left and right margins */
+  padding: 40px 0 24px;
 }
 
-footer .footer p {
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.footer-top h1 {
+  font-size: 36px;
+  font-weight: bold;
   margin: 0;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+.footer-top nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-top nav ul li {
+  font-size: 14px;
+}
+
+.footer-top nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-bottom {
+  padding-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 10px 0;
+}
+
+.footer-bottom a {
+  color: white; /* Set link color to white */
+}
+
+.footer-bottom a:hover {
+  color: lightgray; /* Set link hover color to light gray */
+}
+
+.footer-social span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.footer-social a img {
+  width: 24px;
+  height: 24px;
+}
+
+@media (min-width: 900px) {
+  .footer-content {
+    margin: auto 32px; /* Update left and right margins for larger screens */
+    padding: 40px 0 24px;
   }
 }
