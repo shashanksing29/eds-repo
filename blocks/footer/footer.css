@@ -47,7 +47,12 @@ footer {
 .footer-social {
   display: flex;
   align-items: center;
-  gap: 10px;
+}
+
+.footer-social a {
+  background-color: lightgrey; /* Set background color to grey for social links */
+  padding: 5px;
+  text-decoration: none;
 }
 
 .footer-bottom {
