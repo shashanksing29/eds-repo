@@ -15,7 +15,7 @@
 
 .cards > ul > li:hover {
   transform: translateY(-10px);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px #0000001a;
 }
 
 .cards .cards-card-body {
@@ -38,7 +38,7 @@
 .cards .cards-card-title {
   font-size: 18px;
   font-weight: bold;
-  margin: 16px 0 8px 0;
+  margin: 16px 0 8px;
   color: #000;
 }
 
