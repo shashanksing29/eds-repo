@@ -40,6 +40,10 @@ footer {
   text-decoration: none;
 }
 
+.footer-top nav ul li a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
 .footer-social {
   display: flex;
   align-items: center;

@@ -1,5 +1,4 @@
 import { getMetadata } from '../../scripts/aem.js';
-import { loadFragment } from '../fragment/fragment.js';
 
 /**
  * loads and decorates the footer
@@ -9,13 +8,12 @@ export default async function decorate(block) {
   // load footer as fragment
   const footerMeta = getMetadata('footer');
   const footerPath = footerMeta ? new URL(footerMeta, window.location).pathname : '/footer';
-  const fragment = await loadFragment(footerPath);
 
   // decorate footer DOM
   block.textContent = '';
   const footer = document.createElement('div');
   footer.classList.add('footer-content');
-  
+
   // Create content for the footer
   footer.innerHTML = `
     <div class="footer-top">
