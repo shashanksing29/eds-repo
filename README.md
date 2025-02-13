@@ -4,6 +4,7 @@ Capstone : WKND site redesigned in EDS.
 ## Environments
 - Preview: https://main--eds-repo--shashanksing29.aem.page/
 - Live: https://main--eds-repo--shashanksing29.aem.live/
+- Sidekick Library: https://main--eds-repo--shashanksing29.aem.live/tools/sidekick/library.html/ 
 
 ## Documentation
 
